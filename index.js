@@ -32,11 +32,3 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 app.use("/v1/author", authorRoute);
 app.use("/v1/book", bookRoute);
 
-// const port = process.env.SERVER_PORT || 3000
-// app.listen(port, () => {
-//     console.log(`Server running on port ${port}`)
-// })
-
-// mongoose.connect((process.env.MONGODB_URI), () => {
-//     console.log("Connected to MongoDB");
-// })
